@@ -2,11 +2,12 @@
     {
         "name":"Avicii",
         "albums":[{"title":"True Story",
-            "songs":[{"title":"Wake Me Up","genre":"EDM"},
-                    {"title":"Hey Brother","genre":"EDM"},
-                    {"title":"Addicted To You","genre":"EDM"},
-                    {"title":"Lonely Together","genre":"EDM"}
+            "songs":[{"title":"Wake Me Up"},
+                    {"title":"Hey Brother"},
+                    {"title":"Addicted To You"},
+                    {"title":"Lonely Together"}
                     ],
+            "genre":"EDM",
             "released":"2014"
         }]
     },
@@ -14,11 +15,12 @@
     {
         "name":"Jay Chou",
         "albums":[{"title":"Nectar",
-            "songs":[{"title":"Sunrise","genre":"POP"},
-                    {"title":"Silence","genre":"POP"},
-                    {"title":"Love Confession","genre":"POP"},
-                    {"title":"Mojito","genre":"POP"}
+            "songs":[{"title":"Sunrise"},
+                    {"title":"Silence"},
+                    {"title":"Love Confession"},
+                    {"title":"Mojito"}
                     ],
+             "genre":"POP",
             "released":"2008"
         }]
     },
@@ -26,11 +28,12 @@
     {
         "name":"Post Malone",
         "albums":[{"title":"Stoney",
-            "songs":[{"title":"Congratulations","genre":"Hip-Hop"},
-                    {"title":"Circles","genre":"Hip-Hop"},
-                    {"title":"Better Now","genre":"Hip-Hop"},
-                    {"title":"Rockstar","genre":"Hip-Hop"}
+            "songs":[{"title":"Congratulations"},
+                    {"title":"Circles"},
+                    {"title":"Better Now"},
+                    {"title":"Rockstar"}
                     ],
+             "genre":"Hip-Hop",
             "released":"2016"
         }]
     }
