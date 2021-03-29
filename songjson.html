@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Assignment 9</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<style>
+		table, th, td {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+}
+		</style>
+</head>
+	
+<body>
+	<script language = "javascript">
+		var str = [];
+		$.getJSON('https://yhua03.github.io/JSON-HOST/artist.JSON',
+			function(data) {
+				str = JSON.stringify(data);
+				strHTML = "<ul>";
+				data.forEach(function(artist) {
+					strHTML +="<li>"+ artist.name + "<br>";
+					strHTML +="<li>"+ "Album: " + artist.albums[0].title + "<br>";
+					strHTML +="<li>"+ "Song: " + artist.albums[0].songs[0].title + "<br>";
+					strHTML +="<li>"+ "Genre: " + artist.albums[0].genre + "<br>";
+					strHTML +="<li>"+ "Release Date: " + artist.albums[0].released + "<br>";
+					strHTML += "<br>";
+					
+					strHTML +="<li>"+ artist.name + "<br>";
+					strHTML +="<li>"+ "Album: " + artist.albums[0].title + "<br>";
+					strHTML +="<li>"+ "Song: " + artist.albums[0].songs[1].title + "<br>";
+					strHTML +="<li>"+ "Genre: " + artist.albums[0].genre + "<br>";
+					strHTML +="<li>"+ "Release Date: " + artist.albums[0].released + "<br>";
+					strHTML += "<br>";
+					
+					strHTML +="<li>"+ artist.name + "<br>";
+					strHTML +="<li>"+ "Album: " + artist.albums[0].title + "<br>";
+					strHTML +="<li>"+ "Song: " + artist.albums[0].songs[2].title + "<br>";
+					strHTML +="<li>"+ "Genre: " + artist.albums[0].genre + "<br>";
+					strHTML +="<li>"+ "Release Date: " + artist.albums[0].released + "<br>";
+					strHTML += "<br>";
+					
+					strHTML +="<li>"+ artist.name + "<br>";
+					strHTML +="<li>"+ "Album: " + artist.albums[0].title + "<br>";
+					strHTML +="<li>"+ "Song: " + artist.albums[0].songs[3].title + "<br>";
+					strHTML +="<li>"+ "Genre: " + artist.albums[0].genre + "<br>";
+					strHTML +="<li>"+ "Release Date: " + artist.albums[0].released + "<br>";
+					strHTML += "<br>";
+					
+				})
+				strHTML += "</ul>";
+				
+				document.getElementById('Rawstr').innerHTML += str;
+				document.getElementById('Formatstr').innerHTML += strHTML;
+				
+			})
+					
+	//data filter//
+	function filter() {
+		var val= document.getElementById("datafilter");
+		var genre= val.value;
+		
+		if (genre== "EDM"){
+			document.getElementById("DisplayEDM").style.display = "inline-block";
+		} else {
+			document.getElementById("DisplayEDM").style.display = "none";
+		}
+		
+		if (genre== "POP"){
+			document.getElementById("DisplayPOP").style.display = "inline-block";
+		} else {
+			document.getElementById("DisplayPOP").style.display = "none";
+		}
+		
+		if (genre== "Hip-Hop"){
+			document.getElementById("DisplayHip-Hop").style.display = "inline-block";
+		} else {
+			document.getElementById("DisplayHip-Hop").style.display = "none";
+		}
+	}
+</script>
+<div id='Rawstr'> <h2>Part 2: Serialize and display</h2> </div>		
+
+<div id='Formatstr'> <h2>Part 3:User friendly display </h2> </div>	
+
+<div><h2>Part 4:Filter the data </h2> </div>	
+<form onsubmit="return false">
+	<label>Filter by your favorite genre</label>
+	<select id = "datafilter">
+		<option value = "EDM">EDM</option>
+		<option value = "POP">POP</option>
+		<option value = "Hip-Hop">Hip-Hop</option>
+		</select>
+	<input type="submit" value="Click To Filter" onclick = "filter(this)">
+</form>
+
+<div id="DisplayEDM" style="display:none">
+	<table>
+	<tr>
+		<th>EDM Songs: All By Avicii</th> 
+	</tr>
+	<tr>
+		<td>Wake Me Up</td>
+	</tr>
+	<tr>
+		<td>Hey Brother</td>
+	</tr>
+	<tr>
+		<td>Addicted To You</td>
+	</tr>
+	<tr>
+		<td>Lonely Together</td>
+	</tr>
+		</table>	
+</div>	
+
+<div id="DisplayPOP" style="display:none">
+	<table>
+	<tr>
+		<th>POP Songs: All By Jay Chou周杰伦</th> 
+	</tr>
+	<tr>
+		<td>Sunrise 晴天</td>
+	</tr>
+	<tr>
+		<td>Silence 安静</td>
+	</tr>
+	<tr>
+		<td>Love Confession 告白气球</td>
+	</tr>
+	<tr>
+		<td>Mojito 莫吉托</td>
+	</tr>
+		</table>	
+</div>	
+
+<div id="DisplayHip-Hop" style="display:none">
+	<table>
+	<tr>
+		<th>Hip-Hop Songs: All By Post Malone</th> 
+	</tr>
+	<tr>
+		<td>Congratulations</td>
+	</tr>
+	<tr>
+		<td>Circles</td>
+	</tr>
+	<tr>
+		<td>Better Now</td>
+	</tr>
+	<tr>
+		<td>Rockstar</td>
+	</tr>
+		</table>	
+</div>
+	
+</body>
+</html>
