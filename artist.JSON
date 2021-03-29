@@ -1,7 +1,7 @@
 [
     {
         "name":"Avicii",
-        "class":[{
+        "class":[{"a":"a",
             "songs":[{"title":"Wake Me Up"},
                     {"title":"Hey Brother",
                     {"title":"Addicted To You"},
@@ -13,7 +13,7 @@
 
     {
         "name":"Jay Chou",
-        "class":[{
+        "class":[{"a":"a",
             "songs":[{"title":"Silence"},
                     {"title":"Love Confession"},
                     {"title":"Mojito"},
@@ -25,7 +25,7 @@
 
     {
         "name":"Post Malone",
-        "class":[{
+        "class":[{"a":"a",
             "songs":[{"title":"Congratulations"},
                     {"title":"Better Now"},
                     {"title":"Rockstar"},
@@ -34,6 +34,21 @@
             "genre":"Hip-Hop"
         }]
     },
+    
+    {
+        "name":"Chainsmokers",
+        "class":[{"a":"a",
+            "songs":[{"title":"Closer"},
+                    {"title":"Something Just Like This"},
+                    {"title":"Don't Let Me Down"},
+                    ],
+            "genre":"EDM",
+            "released":"2018"
+        }]
+    },
+
+]
+
     
     {
         "name":"Chainsmokers",
