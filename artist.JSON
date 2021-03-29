@@ -1,7 +1,7 @@
 [
     {
         "name":"Avicii",
-        "albums":[{"title":"True",
+        "class":[{
             "songs":[{"title":"Wake Me Up"},
                     {"title":"Hey Brother",
                     {"title":"Addicted To You"},
@@ -13,7 +13,7 @@
 
     {
         "name":"Jay Chou",
-        "albums":[{"title":"Capricorn",
+        "class":[{
             "songs":[{"title":"Silence"},
                     {"title":"Love Confession"},
                     {"title":"Mojito"},
@@ -25,7 +25,7 @@
 
     {
         "name":"Post Malone",
-        "albums":[{"title":"Stoney",
+        "class":[{
             "songs":[{"title":"Congratulations"},
                     {"title":"Better Now"},
                     {"title":"Rockstar"},
@@ -37,7 +37,7 @@
     
     {
         "name":"Chainsmokers",
-        "albums":[{"title":"Remixes",
+        "class":[{
             "songs":[{"title":"Closer"},
                     {"title":"Something Just Like This"},
                     {"title":"Don't Let Me Down"},
@@ -48,4 +48,5 @@
     },
 
 ]
+
 
