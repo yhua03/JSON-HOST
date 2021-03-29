@@ -1,6 +1,6 @@
 [
 
-{"name":"Avicii",
+{"name": "Avicii",
 
             "songs":[{"title":"Lonely Together","genre":"EDM","released":"2017"},
                     {"title":"Friend of Mine","genre":"EDM","released":"2017"},
@@ -8,19 +8,19 @@
                     ]},
                     
 
-{"name":"Jay Chou",
-            "songs":[{"title":"Silence(安静)","genre":"POP","released":"2001"},
-                    {"title":"Love Confession(告白气球)","genre":"POP","released":"2016"},
+{"name": "Jay Chou",
+            "songs":[{"title":"Silence","genre":"POP","released":"2001"},
+                    {"title":"Love Confession","genre":"POP","released":"2016"},
                     {"title":"Mojito","genre":"POP","released":"2020"}
                     ]},
 
-{"name":"Post Malone",
+{"name": "Post Malone",
             "songs":[{"title":"Better Now","genre":"Hip-Hop","released":"2018"},
                     {"title":"Rockstar","genre":"POP","released":"2018"},
                     {"title":"Circles","genre":"Hip-Hop","released":"2019"}
                     ]},
                     
-{"name":"The Chainsmokers",
+{"name": "The Chainsmokers",
             "songs":[{"title":"Closer","genre":"EDM","released":"2016"},
                     {"title":"Something Just Like This","genre":"EDM","released":"2017"},
                     {"title":"Don't Let Me Down","genre":"EDM","released":"2016"},
